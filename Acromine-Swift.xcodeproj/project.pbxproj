@@ -1,0 +1,756 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		701ECEE9282969A000E136D4 /* Acromine_SwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701ECEE8282969A000E136D4 /* Acromine_SwiftApp.swift */; };
+		701ECEEB282969A000E136D4 /* AcromineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701ECEEA282969A000E136D4 /* AcromineView.swift */; };
+		701ECEED282969A300E136D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 701ECEEC282969A300E136D4 /* Assets.xcassets */; };
+		701ECEF0282969A300E136D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 701ECEEF282969A300E136D4 /* Preview Assets.xcassets */; };
+		701ECEFA282969A300E136D4 /* Acromine_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701ECEF9282969A300E136D4 /* Acromine_SwiftTests.swift */; };
+		701ECF04282969A300E136D4 /* Acromine_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701ECF03282969A300E136D4 /* Acromine_SwiftUITests.swift */; };
+		701ECF06282969A300E136D4 /* Acromine_SwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701ECF05282969A300E136D4 /* Acromine_SwiftUITestsLaunchTests.swift */; };
+		701ECF1F282AA52C00E136D4 /* AcromineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701ECF1E282AA52C00E136D4 /* AcromineViewModel.swift */; };
+		701ECF21282ACFC900E136D4 /* AcromineResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701ECF20282ACFC900E136D4 /* AcromineResponse.swift */; };
+		701ECF23282AD46600E136D4 /* AcromineAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701ECF22282AD46600E136D4 /* AcromineAPIService.swift */; };
+		701ECF27282C2A1100E136D4 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701ECF26282C2A1100E136D4 /* StringExtensions.swift */; };
+		701ECF2A282C372900E136D4 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701ECF29282C372900E136D4 /* Style.swift */; };
+		701ECF2C282C37A500E136D4 /* LongformRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701ECF2B282C37A500E136D4 /* LongformRowView.swift */; };
+		701ECF2E282C383F00E136D4 /* DetailItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701ECF2D282C383F00E136D4 /* DetailItemView.swift */; };
+		701ECF30282C38AB00E136D4 /* AcromineRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701ECF2F282C38AB00E136D4 /* AcromineRowView.swift */; };
+		701ECF32282C38DB00E136D4 /* VarsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701ECF31282C38DB00E136D4 /* VarsRowView.swift */; };
+		701ECF34282C38FC00E136D4 /* ShortformRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701ECF33282C38FC00E136D4 /* ShortformRowView.swift */; };
+		701ECF36282C3AD100E136D4 /* Shortform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701ECF35282C3AD100E136D4 /* Shortform.swift */; };
+		701ECF38282C3AEA00E136D4 /* LongformBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701ECF37282C3AEA00E136D4 /* LongformBase.swift */; };
+		701ECF3A282C3B0B00E136D4 /* Longform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701ECF39282C3B0B00E136D4 /* Longform.swift */; };
+		701ECF3C282C41B800E136D4 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701ECF3B282C41B800E136D4 /* Mock.swift */; };
+		701ECF3E282C42FD00E136D4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 701ECF3D282C42FD00E136D4 /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		701ECEF6282969A300E136D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 701ECEDD282969A000E136D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 701ECEE4282969A000E136D4;
+			remoteInfo = "Acromine-Swift";
+		};
+		701ECF00282969A300E136D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 701ECEDD282969A000E136D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 701ECEE4282969A000E136D4;
+			remoteInfo = "Acromine-Swift";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		701ECEE5282969A000E136D4 /* Acromine-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Acromine-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		701ECEE8282969A000E136D4 /* Acromine_SwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acromine_SwiftApp.swift; sourceTree = "<group>"; };
+		701ECEEA282969A000E136D4 /* AcromineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcromineView.swift; sourceTree = "<group>"; };
+		701ECEEC282969A300E136D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		701ECEEF282969A300E136D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		701ECEF5282969A300E136D4 /* Acromine-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Acromine-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		701ECEF9282969A300E136D4 /* Acromine_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acromine_SwiftTests.swift; sourceTree = "<group>"; };
+		701ECEFF282969A300E136D4 /* Acromine-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Acromine-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		701ECF03282969A300E136D4 /* Acromine_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acromine_SwiftUITests.swift; sourceTree = "<group>"; };
+		701ECF05282969A300E136D4 /* Acromine_SwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acromine_SwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		701ECF1E282AA52C00E136D4 /* AcromineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcromineViewModel.swift; sourceTree = "<group>"; };
+		701ECF20282ACFC900E136D4 /* AcromineResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcromineResponse.swift; sourceTree = "<group>"; };
+		701ECF22282AD46600E136D4 /* AcromineAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcromineAPIService.swift; sourceTree = "<group>"; };
+		701ECF24282B345D00E136D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		701ECF26282C2A1100E136D4 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		701ECF29282C372900E136D4 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		701ECF2B282C37A500E136D4 /* LongformRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongformRowView.swift; sourceTree = "<group>"; };
+		701ECF2D282C383F00E136D4 /* DetailItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailItemView.swift; sourceTree = "<group>"; };
+		701ECF2F282C38AB00E136D4 /* AcromineRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcromineRowView.swift; sourceTree = "<group>"; };
+		701ECF31282C38DB00E136D4 /* VarsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VarsRowView.swift; sourceTree = "<group>"; };
+		701ECF33282C38FC00E136D4 /* ShortformRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortformRowView.swift; sourceTree = "<group>"; };
+		701ECF35282C3AD100E136D4 /* Shortform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shortform.swift; sourceTree = "<group>"; };
+		701ECF37282C3AEA00E136D4 /* LongformBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongformBase.swift; sourceTree = "<group>"; };
+		701ECF39282C3B0B00E136D4 /* Longform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Longform.swift; sourceTree = "<group>"; };
+		701ECF3B282C41B800E136D4 /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
+		701ECF3D282C42FD00E136D4 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		701ECEE2282969A000E136D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		701ECEF2282969A300E136D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		701ECEFC282969A300E136D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		701ECEDC282969A000E136D4 = {
+			isa = PBXGroup;
+			children = (
+				701ECEE7282969A000E136D4 /* Acromine-Swift */,
+				701ECEF8282969A300E136D4 /* Acromine-SwiftTests */,
+				701ECF02282969A300E136D4 /* Acromine-SwiftUITests */,
+				701ECEE6282969A000E136D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		701ECEE6282969A000E136D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				701ECEE5282969A000E136D4 /* Acromine-Swift.app */,
+				701ECEF5282969A300E136D4 /* Acromine-SwiftTests.xctest */,
+				701ECEFF282969A300E136D4 /* Acromine-SwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		701ECEE7282969A000E136D4 /* Acromine-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				701ECF122829F33900E136D4 /* Source */,
+				701ECF1B2829F42900E136D4 /* Resources */,
+			);
+			path = "Acromine-Swift";
+			sourceTree = "<group>";
+		};
+		701ECEEE282969A300E136D4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				701ECEEF282969A300E136D4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		701ECEF8282969A300E136D4 /* Acromine-SwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				701ECEF9282969A300E136D4 /* Acromine_SwiftTests.swift */,
+			);
+			path = "Acromine-SwiftTests";
+			sourceTree = "<group>";
+		};
+		701ECF02282969A300E136D4 /* Acromine-SwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				701ECF03282969A300E136D4 /* Acromine_SwiftUITests.swift */,
+				701ECF05282969A300E136D4 /* Acromine_SwiftUITestsLaunchTests.swift */,
+			);
+			path = "Acromine-SwiftUITests";
+			sourceTree = "<group>";
+		};
+		701ECF122829F33900E136D4 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				701ECF132829F34100E136D4 /* Application */,
+				701ECF142829F38F00E136D4 /* Features */,
+				701ECF1D2829F5E400E136D4 /* Models */,
+				701ECF192829F3EE00E136D4 /* Services */,
+				701ECF172829F3D800E136D4 /* Shared */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		701ECF132829F34100E136D4 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				701ECEE8282969A000E136D4 /* Acromine_SwiftApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		701ECF142829F38F00E136D4 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				701ECF152829F3A400E136D4 /* Acromine */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		701ECF152829F3A400E136D4 /* Acromine */ = {
+			isa = PBXGroup;
+			children = (
+				701ECF162829F3C200E136D4 /* Views */,
+				701ECF1C2829F4D900E136D4 /* ViewModels */,
+			);
+			path = Acromine;
+			sourceTree = "<group>";
+		};
+		701ECF162829F3C200E136D4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				701ECEEA282969A000E136D4 /* AcromineView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		701ECF172829F3D800E136D4 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				701ECF25282C29F900E136D4 /* Utilities */,
+				701ECF182829F3E100E136D4 /* Views */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		701ECF182829F3E100E136D4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				701ECF2F282C38AB00E136D4 /* AcromineRowView.swift */,
+				701ECF2D282C383F00E136D4 /* DetailItemView.swift */,
+				701ECF2B282C37A500E136D4 /* LongformRowView.swift */,
+				701ECF33282C38FC00E136D4 /* ShortformRowView.swift */,
+				701ECF31282C38DB00E136D4 /* VarsRowView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		701ECF192829F3EE00E136D4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				701ECF1A2829F41500E136D4 /* API */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		701ECF1A2829F41500E136D4 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				701ECF22282AD46600E136D4 /* AcromineAPIService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		701ECF1B2829F42900E136D4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				701ECEEE282969A300E136D4 /* Preview Content */,
+				701ECF24282B345D00E136D4 /* Info.plist */,
+				701ECEEC282969A300E136D4 /* Assets.xcassets */,
+				701ECF3D282C42FD00E136D4 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		701ECF1C2829F4D900E136D4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				701ECF1E282AA52C00E136D4 /* AcromineViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		701ECF1D2829F5E400E136D4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				701ECF20282ACFC900E136D4 /* AcromineResponse.swift */,
+				701ECF39282C3B0B00E136D4 /* Longform.swift */,
+				701ECF37282C3AEA00E136D4 /* LongformBase.swift */,
+				701ECF3B282C41B800E136D4 /* Mock.swift */,
+				701ECF35282C3AD100E136D4 /* Shortform.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		701ECF25282C29F900E136D4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				701ECF26282C2A1100E136D4 /* StringExtensions.swift */,
+				701ECF29282C372900E136D4 /* Style.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		701ECEE4282969A000E136D4 /* Acromine-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 701ECF09282969A300E136D4 /* Build configuration list for PBXNativeTarget "Acromine-Swift" */;
+			buildPhases = (
+				701ECEE1282969A000E136D4 /* Sources */,
+				701ECEE2282969A000E136D4 /* Frameworks */,
+				701ECEE3282969A000E136D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Acromine-Swift";
+			productName = "Acromine-Swift";
+			productReference = 701ECEE5282969A000E136D4 /* Acromine-Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		701ECEF4282969A300E136D4 /* Acromine-SwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 701ECF0C282969A300E136D4 /* Build configuration list for PBXNativeTarget "Acromine-SwiftTests" */;
+			buildPhases = (
+				701ECEF1282969A300E136D4 /* Sources */,
+				701ECEF2282969A300E136D4 /* Frameworks */,
+				701ECEF3282969A300E136D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				701ECEF7282969A300E136D4 /* PBXTargetDependency */,
+			);
+			name = "Acromine-SwiftTests";
+			productName = "Acromine-SwiftTests";
+			productReference = 701ECEF5282969A300E136D4 /* Acromine-SwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		701ECEFE282969A300E136D4 /* Acromine-SwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 701ECF0F282969A300E136D4 /* Build configuration list for PBXNativeTarget "Acromine-SwiftUITests" */;
+			buildPhases = (
+				701ECEFB282969A300E136D4 /* Sources */,
+				701ECEFC282969A300E136D4 /* Frameworks */,
+				701ECEFD282969A300E136D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				701ECF01282969A300E136D4 /* PBXTargetDependency */,
+			);
+			name = "Acromine-SwiftUITests";
+			productName = "Acromine-SwiftUITests";
+			productReference = 701ECEFF282969A300E136D4 /* Acromine-SwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		701ECEDD282969A000E136D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					701ECEE4282969A000E136D4 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					701ECEF4282969A300E136D4 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 701ECEE4282969A000E136D4;
+					};
+					701ECEFE282969A300E136D4 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 701ECEE4282969A000E136D4;
+					};
+				};
+			};
+			buildConfigurationList = 701ECEE0282969A000E136D4 /* Build configuration list for PBXProject "Acromine-Swift" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 701ECEDC282969A000E136D4;
+			productRefGroup = 701ECEE6282969A000E136D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				701ECEE4282969A000E136D4 /* Acromine-Swift */,
+				701ECEF4282969A300E136D4 /* Acromine-SwiftTests */,
+				701ECEFE282969A300E136D4 /* Acromine-SwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		701ECEE3282969A000E136D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				701ECEF0282969A300E136D4 /* Preview Assets.xcassets in Resources */,
+				701ECF3E282C42FD00E136D4 /* Localizable.strings in Resources */,
+				701ECEED282969A300E136D4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		701ECEF3282969A300E136D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		701ECEFD282969A300E136D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		701ECEE1282969A000E136D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				701ECF30282C38AB00E136D4 /* AcromineRowView.swift in Sources */,
+				701ECF27282C2A1100E136D4 /* StringExtensions.swift in Sources */,
+				701ECF38282C3AEA00E136D4 /* LongformBase.swift in Sources */,
+				701ECF3A282C3B0B00E136D4 /* Longform.swift in Sources */,
+				701ECF1F282AA52C00E136D4 /* AcromineViewModel.swift in Sources */,
+				701ECF21282ACFC900E136D4 /* AcromineResponse.swift in Sources */,
+				701ECF2E282C383F00E136D4 /* DetailItemView.swift in Sources */,
+				701ECF34282C38FC00E136D4 /* ShortformRowView.swift in Sources */,
+				701ECEEB282969A000E136D4 /* AcromineView.swift in Sources */,
+				701ECF2C282C37A500E136D4 /* LongformRowView.swift in Sources */,
+				701ECF23282AD46600E136D4 /* AcromineAPIService.swift in Sources */,
+				701ECF36282C3AD100E136D4 /* Shortform.swift in Sources */,
+				701ECF32282C38DB00E136D4 /* VarsRowView.swift in Sources */,
+				701ECF2A282C372900E136D4 /* Style.swift in Sources */,
+				701ECEE9282969A000E136D4 /* Acromine_SwiftApp.swift in Sources */,
+				701ECF3C282C41B800E136D4 /* Mock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		701ECEF1282969A300E136D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				701ECEFA282969A300E136D4 /* Acromine_SwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		701ECEFB282969A300E136D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				701ECF06282969A300E136D4 /* Acromine_SwiftUITestsLaunchTests.swift in Sources */,
+				701ECF04282969A300E136D4 /* Acromine_SwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		701ECEF7282969A300E136D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 701ECEE4282969A000E136D4 /* Acromine-Swift */;
+			targetProxy = 701ECEF6282969A300E136D4 /* PBXContainerItemProxy */;
+		};
+		701ECF01282969A300E136D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 701ECEE4282969A000E136D4 /* Acromine-Swift */;
+			targetProxy = 701ECF00282969A300E136D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		701ECF07282969A300E136D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		701ECF08282969A300E136D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		701ECF0A282969A300E136D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Acromine-Swift/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = W9XKUZNL6V;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Acromine-Swift/Resources/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.breakawaymobile.Acromine-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		701ECF0B282969A300E136D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Acromine-Swift/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = W9XKUZNL6V;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Acromine-Swift/Resources/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.breakawaymobile.Acromine-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		701ECF0D282969A300E136D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W9XKUZNL6V;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.breakawaymobile.Acromine-SwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Acromine-Swift.app/Acromine-Swift";
+			};
+			name = Debug;
+		};
+		701ECF0E282969A300E136D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W9XKUZNL6V;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.breakawaymobile.Acromine-SwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Acromine-Swift.app/Acromine-Swift";
+			};
+			name = Release;
+		};
+		701ECF10282969A300E136D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W9XKUZNL6V;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.breakawaymobile.Acromine-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Acromine-Swift";
+			};
+			name = Debug;
+		};
+		701ECF11282969A300E136D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W9XKUZNL6V;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.breakawaymobile.Acromine-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Acromine-Swift";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		701ECEE0282969A000E136D4 /* Build configuration list for PBXProject "Acromine-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				701ECF07282969A300E136D4 /* Debug */,
+				701ECF08282969A300E136D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		701ECF09282969A300E136D4 /* Build configuration list for PBXNativeTarget "Acromine-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				701ECF0A282969A300E136D4 /* Debug */,
+				701ECF0B282969A300E136D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		701ECF0C282969A300E136D4 /* Build configuration list for PBXNativeTarget "Acromine-SwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				701ECF0D282969A300E136D4 /* Debug */,
+				701ECF0E282969A300E136D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		701ECF0F282969A300E136D4 /* Build configuration list for PBXNativeTarget "Acromine-SwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				701ECF10282969A300E136D4 /* Debug */,
+				701ECF11282969A300E136D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 701ECEDD282969A000E136D4 /* Project object */;
+}

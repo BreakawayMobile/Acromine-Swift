@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  Acromine-Swift
+
+  Created by Joe Radjavitch on 5/11/22.
+  
+*/
+
+"acromine.view.search.title" = "Search";
+"acromine.view.picker.title" = "Longform Search?:";
+
+"picker.yes" = "Yes";
+"picker.no" = "No";
