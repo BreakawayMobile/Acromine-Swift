@@ -11,39 +11,54 @@ struct AcromineView: View {
     
     // MARK: - Properties
     
-    @StateObject var viewModel = AcromineViewModel()
+    @StateObject var viewModel = AcromineViewModel(api: AcromineAPIService.shared)
     
     // MARK: - Body
 
     var body: some View {
-        VStack {
-            // Enter text to search for
-            TextField("acromine.view.search.title".localized, text: $viewModel.text)
-                .disableAutocorrection(true)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-            
-            // Make a longform or shortform request?
-            HStack {
-                Text("acromine.view.picker.title".localized)
-                    .font(.headline)
+        ZStack {
+            VStack {
+                // Enter text to search for
+                TextField("acromine.view.search.title".localized, text: $viewModel.text)
+                    .disableAutocorrection(true)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                
+                // Make a longform or shortform request?
+                HStack {
+                    Text("acromine.view.picker.title".localized)
+                        .font(.headline)
+                    
+                    Spacer()
+                    
+                    Picker("acromine.view.picker.title".localized,
+                           selection: $viewModel.longformRequest) {
+                        Text("picker.yes".localized).tag(true)
+                        Text("picker.no".localized).tag(false)
+                    }
+                }.padding(.horizontal, 10)
+                
+                // List of results
+                List(viewModel.responses, children: \.children) { response in
+                    AcromineRowView(response: response)
+                }
                 
                 Spacer()
-                
-                Picker("acromine.view.picker.title".localized,
-                       selection: $viewModel.longformRequest) {
-                    Text("picker.yes".localized).tag(true)
-                    Text("picker.no".localized).tag(false)
-                }
-            }.padding(.horizontal, 10)
-            
-            // List of results
-            List(viewModel.responses, children: \.children) { response in
-                AcromineRowView(response: response)
             }
+            .padding()
             
-            Spacer()
+            if viewModel.fetching {
+                ZStack {
+                    Color.gray.opacity(0.8).ignoresSafeArea()
+                    
+                    ProgressView("Please wait...")
+                        .padding()
+                        .progressViewStyle(CircularProgressViewStyle(tint: .black))
+                        .foregroundColor(.black)
+                        .background(.ultraThinMaterial)
+                        .cornerRadius(13)
+                }
+            }
         }
-        .padding()
     }
 }
 

@@ -7,22 +7,32 @@
 
 import Foundation
 
-class AcromineResponse: Identifiable {
+class AcromineResponse: Codable, Identifiable, Equatable {
     
     // MARK: - Public Properties
 
     let id = UUID()
     var children: [AcromineResponse]? = []
     var title: String = ""
+    
+    // MARK: - Codable
+
+    required init(from decoder: Decoder) throws { }
+
+    func encode(from encoder: Encoder) throws { }
+    
+    // MARK: - Equatable
+    
+    static func ==(lhs: AcromineResponse, rhs: AcromineResponse) -> Bool {
+        return lhs.children == rhs.children
+    }
 }
 
 // MARK: - Mock Objects
 
 extension Mock {
     var mockAcromineResponse: AcromineResponse {
-        let response = AcromineResponse()
-        response.children = [mockLongform, mockShortForm]
-        return response
+        return MockAcromineAPIService.shared.shortFormMock().first!
     }
 }
 

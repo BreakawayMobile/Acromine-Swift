@@ -7,7 +7,7 @@
 
 import Foundation
 
-class LongformBase: AcromineResponse, Decodable  {
+class LongformBase: AcromineResponse  {
 
     // MARK: - Public Properties
 
@@ -33,15 +33,43 @@ class LongformBase: AcromineResponse, Decodable  {
         }
     }
     
-    // MARK: - Initialization
+    // MARK: - Codable
 
-    internal init(lf: String = "Longform Name",
-         freq: Int = 1500,
-         since: Int = 1970) {
+    required init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
         
-        self.lf = lf
-        self.freq = freq
-        self.since = since
+        lf = try values.decode(String.self, forKey: .lf)
+        freq = try values.decode(Int.self, forKey: .freq)
+        since = try values.decode(Int.self, forKey: .since)
+
+        try super.init(from: decoder)
+    }
+
+    override func encode(from encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        
+        try container.encode(self.lf, forKey: .lf)
+        try container.encode(self.freq, forKey: .freq)
+        try container.encode(self.since, forKey: .since)
+
+        try super.encode(from: encoder)
+    }
+
+    // MARK: - Coding Keys
+
+    private enum CodingKeys: String, CodingKey {
+        case lf
+        case freq
+        case since
+    }
+    
+    // MARK: - Equatable
+    
+    static func ==(lhs: LongformBase, rhs: LongformBase) -> Bool {
+        return lhs.lf == rhs.lf &&
+            lhs.freq == rhs.freq &&
+            lhs.since == rhs.since &&
+            (lhs as AcromineResponse) == (rhs as AcromineResponse)
     }
 }
 
@@ -49,6 +77,8 @@ class LongformBase: AcromineResponse, Decodable  {
 
 extension Mock {
     var mockLongformBase: LongformBase {
-        return LongformBase()
+        let shortForm = MockAcromineAPIService.shared.shortFormMock().first as! Shortform
+        let longForm = shortForm.lfs.first!
+        return longForm.vars.first!
     }
 }

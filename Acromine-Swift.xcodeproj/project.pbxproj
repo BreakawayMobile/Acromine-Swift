@@ -29,6 +29,12 @@
 		701ECF3A282C3B0B00E136D4 /* Longform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701ECF39282C3B0B00E136D4 /* Longform.swift */; };
 		701ECF3C282C41B800E136D4 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701ECF3B282C41B800E136D4 /* Mock.swift */; };
 		701ECF3E282C42FD00E136D4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 701ECF3D282C42FD00E136D4 /* Localizable.strings */; };
+		701ECF43282C7CD700E136D4 /* HMM.json in Resources */ = {isa = PBXBuildFile; fileRef = 701ECF42282C7CD700E136D4 /* HMM.json */; };
+		701ECF45282C7D1500E136D4 /* Empty.json in Resources */ = {isa = PBXBuildFile; fileRef = 701ECF44282C7D1500E136D4 /* Empty.json */; };
+		701ECF47282C7D4C00E136D4 /* HMM_lf.json in Resources */ = {isa = PBXBuildFile; fileRef = 701ECF46282C7D4C00E136D4 /* HMM_lf.json */; };
+		701ECF49282C7E5600E136D4 /* AcromineAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701ECF48282C7E5600E136D4 /* AcromineAPIProtocol.swift */; };
+		701ECF4B282C817C00E136D4 /* MockAcromineAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701ECF4A282C817C00E136D4 /* MockAcromineAPIService.swift */; };
+		701ECF4D282C84F300E136D4 /* AcromineViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701ECF4C282C84F300E136D4 /* AcromineViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +81,12 @@
 		701ECF39282C3B0B00E136D4 /* Longform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Longform.swift; sourceTree = "<group>"; };
 		701ECF3B282C41B800E136D4 /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
 		701ECF3D282C42FD00E136D4 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		701ECF42282C7CD700E136D4 /* HMM.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HMM.json; sourceTree = "<group>"; };
+		701ECF44282C7D1500E136D4 /* Empty.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Empty.json; sourceTree = "<group>"; };
+		701ECF46282C7D4C00E136D4 /* HMM_lf.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HMM_lf.json; sourceTree = "<group>"; };
+		701ECF48282C7E5600E136D4 /* AcromineAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcromineAPIProtocol.swift; sourceTree = "<group>"; };
+		701ECF4A282C817C00E136D4 /* MockAcromineAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAcromineAPIService.swift; sourceTree = "<group>"; };
+		701ECF4C282C84F300E136D4 /* AcromineViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcromineViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				701ECEF9282969A300E136D4 /* Acromine_SwiftTests.swift */,
+				701ECF4C282C84F300E136D4 /* AcromineViewModelTests.swift */,
 			);
 			path = "Acromine-SwiftTests";
 			sourceTree = "<group>";
@@ -234,6 +247,8 @@
 			isa = PBXGroup;
 			children = (
 				701ECF22282AD46600E136D4 /* AcromineAPIService.swift */,
+				701ECF48282C7E5600E136D4 /* AcromineAPIProtocol.swift */,
+				701ECF4A282C817C00E136D4 /* MockAcromineAPIService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -241,6 +256,7 @@
 		701ECF1B2829F42900E136D4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				701ECF3F282C7C6800E136D4 /* Mock */,
 				701ECEEE282969A300E136D4 /* Preview Content */,
 				701ECF24282B345D00E136D4 /* Info.plist */,
 				701ECEEC282969A300E136D4 /* Assets.xcassets */,
@@ -276,6 +292,16 @@
 				701ECF29282C372900E136D4 /* Style.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		701ECF3F282C7C6800E136D4 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				701ECF42282C7CD700E136D4 /* HMM.json */,
+				701ECF44282C7D1500E136D4 /* Empty.json */,
+				701ECF46282C7D4C00E136D4 /* HMM_lf.json */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,8 +408,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				701ECF45282C7D1500E136D4 /* Empty.json in Resources */,
 				701ECEF0282969A300E136D4 /* Preview Assets.xcassets in Resources */,
 				701ECF3E282C42FD00E136D4 /* Localizable.strings in Resources */,
+				701ECF43282C7CD700E136D4 /* HMM.json in Resources */,
+				701ECF47282C7D4C00E136D4 /* HMM_lf.json in Resources */,
 				701ECEED282969A300E136D4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,11 +444,13 @@
 				701ECF3A282C3B0B00E136D4 /* Longform.swift in Sources */,
 				701ECF1F282AA52C00E136D4 /* AcromineViewModel.swift in Sources */,
 				701ECF21282ACFC900E136D4 /* AcromineResponse.swift in Sources */,
+				701ECF4B282C817C00E136D4 /* MockAcromineAPIService.swift in Sources */,
 				701ECF2E282C383F00E136D4 /* DetailItemView.swift in Sources */,
 				701ECF34282C38FC00E136D4 /* ShortformRowView.swift in Sources */,
 				701ECEEB282969A000E136D4 /* AcromineView.swift in Sources */,
 				701ECF2C282C37A500E136D4 /* LongformRowView.swift in Sources */,
 				701ECF23282AD46600E136D4 /* AcromineAPIService.swift in Sources */,
+				701ECF49282C7E5600E136D4 /* AcromineAPIProtocol.swift in Sources */,
 				701ECF36282C3AD100E136D4 /* Shortform.swift in Sources */,
 				701ECF32282C38DB00E136D4 /* VarsRowView.swift in Sources */,
 				701ECF2A282C372900E136D4 /* Style.swift in Sources */,
@@ -432,6 +463,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				701ECF4D282C84F300E136D4 /* AcromineViewModelTests.swift in Sources */,
 				701ECEFA282969A300E136D4 /* Acromine_SwiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -14,6 +14,7 @@ class AcromineViewModel: ObservableObject {
 
     @Published var responses: [AcromineResponse] = []
     @Published var longformRequest = false
+    @Published var fetching = false
     @Published var text: String = "" {
         didSet {
             // Each time the user enters a character, fetch the data
@@ -26,12 +27,23 @@ class AcromineViewModel: ObservableObject {
     // MARK: - Private Properties
 
     private var _cancellable = Set<AnyCancellable>()
-
+    private var acromineAPI: AcromineAPIProtocol!
+    
+    // MARK: - Initialization
+    
+    init(api: AcromineAPIProtocol) {
+        acromineAPI = api
+    }
+    
     // MARK: - Public Methods
 
     func fetch() {
-        AcromineAPIService.getDictionary(using: self.text,
-                                         isLongform: self.longformRequest).sink(
+        DispatchQueue.main.async { [weak self] in
+            self?.fetching = true
+        }
+        
+        self.acromineAPI.getDictionary(using: self.text,
+                                       isLongform: self.longformRequest).sink(
              receiveCompletion: { [weak self] complete in
                  switch(complete) {
                  case .finished:
@@ -41,6 +53,9 @@ class AcromineViewModel: ObservableObject {
                      DispatchQueue.main.async { [weak self] in
                          self?.responses = []
                      }
+                 }
+                 DispatchQueue.main.async { [weak self] in
+                     self?.fetching = false
                  }
              },
              receiveValue: { result in

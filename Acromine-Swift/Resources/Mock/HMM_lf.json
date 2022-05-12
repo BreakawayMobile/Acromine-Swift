@@ -1,0 +1,195 @@
+[
+    {
+        "sf": "RARA",
+        "lfs": [
+            {
+                "lf": "retinoic acid receptor alpha",
+                "freq": 38,
+                "since": 1992,
+                "vars": [
+                    {
+                        "lf": "retinoic acid receptor alpha",
+                        "freq": 32,
+                        "since": 1992
+                    },
+                    {
+                        "lf": "retinoic acid receptor-alpha",
+                        "freq": 3,
+                        "since": 1992
+                    },
+                    {
+                        "lf": "retinoic acid receptor A",
+                        "freq": 2,
+                        "since": 1993
+                    },
+                    {
+                        "lf": "retinoic acid receptor a",
+                        "freq": 1,
+                        "since": 1993
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "sf": "RARALPHA",
+        "lfs": [
+            {
+                "lf": "retinoic acid receptor alpha",
+                "freq": 149,
+                "since": 1996,
+                "vars": [
+                    {
+                        "lf": "retinoic acid receptor alpha",
+                        "freq": 91,
+                        "since": 1996
+                    },
+                    {
+                        "lf": "retinoic acid receptor-alpha",
+                        "freq": 31,
+                        "since": 1998
+                    },
+                    {
+                        "lf": "Retinoic acid receptor alpha",
+                        "freq": 8,
+                        "since": 1999
+                    },
+                    {
+                        "lf": "RA receptor alpha",
+                        "freq": 7,
+                        "since": 1996
+                    },
+                    {
+                        "lf": "Retinoic Acid Receptor alpha",
+                        "freq": 3,
+                        "since": 1998
+                    },
+                    {
+                        "lf": "RA) receptor alpha",
+                        "freq": 3,
+                        "since": 2004
+                    },
+                    {
+                        "lf": "retinoic acid receptors alpha",
+                        "freq": 1,
+                        "since": 1998
+                    },
+                    {
+                        "lf": "retinoid acid receptors alpha",
+                        "freq": 1,
+                        "since": 2007
+                    },
+                    {
+                        "lf": "RA receptor-alpha",
+                        "freq": 1,
+                        "since": 2008
+                    },
+                    {
+                        "lf": "retinoid acid receptor alpha",
+                        "freq": 1,
+                        "since": 2002
+                    },
+                    {
+                        "lf": "retinoid acid receptor-alpha",
+                        "freq": 1,
+                        "since": 2005
+                    },
+                    {
+                        "lf": "Retinoic acid receptor-alpha",
+                        "freq": 1,
+                        "since": 2002
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "sf": "RAR ALPHA",
+        "lfs": [
+            {
+                "lf": "retinoic acid receptor alpha",
+                "freq": 94,
+                "since": 1989,
+                "vars": [
+                    {
+                        "lf": "retinoic acid receptor alpha",
+                        "freq": 62,
+                        "since": 1989
+                    },
+                    {
+                        "lf": "retinoic acid receptor-alpha",
+                        "freq": 14,
+                        "since": 1991
+                    },
+                    {
+                        "lf": "RA receptor alpha",
+                        "freq": 7,
+                        "since": 1991
+                    },
+                    {
+                        "lf": "retinoic acid alpha receptor",
+                        "freq": 3,
+                        "since": 1993
+                    },
+                    {
+                        "lf": "retinoic acid receptors alpha",
+                        "freq": 2,
+                        "since": 1994
+                    },
+                    {
+                        "lf": "Retinoic acid receptor alpha",
+                        "freq": 2,
+                        "since": 1996
+                    },
+                    {
+                        "lf": "retinoic acid-alpha receptor",
+                        "freq": 1,
+                        "since": 1994
+                    },
+                    {
+                        "lf": "retinoic acid alpha-receptor",
+                        "freq": 1,
+                        "since": 2004
+                    },
+                    {
+                        "lf": "RA) receptor alpha",
+                        "freq": 1,
+                        "since": 1990
+                    },
+                    {
+                        "lf": "Retinoic Acid Receptor alpha",
+                        "freq": 1,
+                        "since": 1997
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "sf": "RAR-ALPHA",
+        "lfs": [
+            {
+                "lf": "retinoic acid receptor-alpha",
+                "freq": 26,
+                "since": 1991,
+                "vars": [
+                    {
+                        "lf": "retinoic acid receptor-alpha",
+                        "freq": 17,
+                        "since": 1991
+                    },
+                    {
+                        "lf": "retinoic acid receptor alpha",
+                        "freq": 8,
+                        "since": 1991
+                    },
+                    {
+                        "lf": "Retinoic-acid receptor-alpha",
+                        "freq": 1,
+                        "since": 1998
+                    }
+                ]
+            }
+        ]
+    }
+]

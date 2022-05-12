@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Shortform: AcromineResponse, Decodable {
+class Shortform: AcromineResponse {
     
     // MARK: - Public Properties
 
@@ -32,10 +32,38 @@ class Shortform: AcromineResponse, Decodable {
         }
     }
 
-    // MARK: - Initialization
+    // MARK: - Codable
 
-    internal init(sf: String) {
-        self.sf = sf
+    required init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        sf = try values.decode(String.self, forKey: .sf)
+        lfs = try values.decode([Longform].self, forKey: .lfs)
+        
+        try super.init(from: decoder)
+    }
+    
+    override func encode(from encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        
+        try container.encode(self.sf, forKey: .sf)
+        try container.encode(self.lfs, forKey: .lfs)
+        
+        try super.encode(from: encoder)
+    }
+
+    // MARK: - Coding Keys
+
+    private enum CodingKeys: String, CodingKey {
+        case sf
+        case lfs
+    }
+    
+    // MARK: - Equatable
+    
+    static func ==(lhs: Shortform, rhs: Shortform) -> Bool {
+        return lhs.sf == rhs.sf &&
+            lhs.lfs == rhs.lfs &&
+            (lhs as AcromineResponse) == (rhs as AcromineResponse)
     }
 }
 
@@ -43,8 +71,6 @@ class Shortform: AcromineResponse, Decodable {
 
 extension Mock {
     var mockShortForm: Shortform {
-        let shortForm = Shortform(sf: "Shortform Title")
-        shortForm.children = [mockLongform]
-        return shortForm
+        return MockAcromineAPIService.shared.shortFormMock().first as! Shortform
     }
 }

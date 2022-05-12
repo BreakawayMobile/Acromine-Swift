@@ -8,23 +8,26 @@
 import Foundation
 import Combine
 
-enum APIError: LocalizedError {
-    case invalidRequestError(String)
-    case responseError(String)
-}
-
-class AcromineAPIService {
+class AcromineAPIService: AcromineAPIProtocol {
+    
+    // MARK: - Static Properties
+    
+    static let shared = AcromineAPIService()
+    
+    // MARK: - Initialization
+    
+    private init() { }
     
     // MARK: - Public Properties
 
-    static let ACROMINE_BASE_URL = "http://nactem.ac.uk/software/acromine/dictionary.py"
+    let ACROMINE_BASE_URL = "http://nactem.ac.uk/software/acromine/dictionary.py"
     
-    // MARK: - Public Methods
+    // MARK: - AcromineAPIProtocol
 
-    static func getDictionary(using query: String, isLongform: Bool) -> AnyPublisher<[Shortform], APIError> {
+    func getDictionary(using query: String, isLongform: Bool) -> AnyPublisher<[Shortform], APIError> {
 
         guard let request = makeRequest(using: query, isLongform: isLongform) else {
-            return Result.Publisher(APIError.invalidRequestError("")).eraseToAnyPublisher()
+            return Result.Publisher(APIError.invalidRequestError("Error making request!")).eraseToAnyPublisher()
         }
 
         let decoder = JSONDecoder()
@@ -41,7 +44,7 @@ class AcromineAPIService {
                                              
     // MARK: - Private Methods
 
-    private static func makeRequest(using query: String, isLongform: Bool) -> URLRequest? {
+    private func makeRequest(using query: String, isLongform: Bool) -> URLRequest? {
         guard var components = URLComponents(string: ACROMINE_BASE_URL) else { return nil }
         components.queryItems = [URLQueryItem(name: isLongform ? "lf" : "sf", value: query)]
 
